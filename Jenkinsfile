@@ -12,7 +12,7 @@ pipeline {
         stage('Get Code') {
             steps {
                 // Obtener código del repo
-                // git branch: "master", url: 'https://github.com/anieto-unir/cucumber-helloworld.git'
+                git branch: "master", url: 'https://github.com/macunagutierrez/cucumber-helloworld.git'
 				script {
 					scmVars = checkout scm
 					echo 'scm : the commit id is ' + scmVars.GIT_COMMIT
