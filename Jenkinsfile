@@ -9,7 +9,7 @@ pipeline {
                 bat 'echo %WORKSPACE%'
             }
         }
-        stage('Get Code') {
+        stage('Get Code2') {
             steps {
                 // Obtener código del repo
                 git branch: "master", url: 'https://github.com/macunagutierrez/cucumber-helloworld.git'
