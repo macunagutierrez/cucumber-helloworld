@@ -24,6 +24,7 @@ pipeline {
         {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    bat 'cmd'
                     bat 'mvn test'
                 }
             }
